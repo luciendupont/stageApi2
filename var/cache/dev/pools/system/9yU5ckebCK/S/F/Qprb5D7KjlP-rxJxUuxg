@@ -69,7 +69,10 @@ return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hyd
             ],
             'schema' => [
                 [
-                    'type' => 'string',
+                    'type' => [
+                        'string',
+                        'null',
+                    ],
                 ],
             ],
             'initializable' => [
@@ -90,7 +93,7 @@ return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hyd
                 1 => 'string',
             ],
             'nullable' => [
-                1 => false,
+                1 => true,
             ],
             'class' => [
                 1 => null,

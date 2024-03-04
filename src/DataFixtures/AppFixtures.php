@@ -263,13 +263,13 @@ class AppFixtures extends Fixture
         if (!$adresse) {
     // Créez une nouvelle adresse si elle n'existe pas déjà
         $adresse = new Adresse();
-        $adresse->setAdrPrenom('Lucas')
-            ->setAdrNom('Dro')
-            ->setAdresse('20 rue jfkfkf')
-            ->setAdrCp('80080')
-            ->setAdrVille('Amiens')
-            ->setAdrTel('0767897678')
-            ->setAdrPays('France')
+        $adresse->setAdrPrenom('')
+            ->setAdrNom('')
+            ->setAdresse('')
+            ->setAdrCp('')
+            ->setAdrVille('')
+            ->setAdrTel('')
+            ->setAdrPays('')
             ->setAdrEmail('');
             $adresse->setUsers($users);
             $manager->persist($adresse);

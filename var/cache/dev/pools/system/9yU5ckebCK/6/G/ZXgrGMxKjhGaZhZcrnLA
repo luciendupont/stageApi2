@@ -18,10 +18,10 @@ return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hyd
                 true,
             ],
             'readableLink' => [
-                false,
+                null,
             ],
             'writableLink' => [
-                false,
+                null,
             ],
             'required' => [
                 false,
@@ -69,13 +69,10 @@ return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hyd
             ],
             'schema' => [
                 [
-                    'owl:maxCardinality' => 1,
                     'type' => [
-                        'string',
+                        'unknown_type',
                         'null',
                     ],
-                    'format' => 'iri-reference',
-                    'example' => 'https://example.com/',
                 ],
             ],
             'initializable' => [

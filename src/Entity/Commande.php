@@ -26,7 +26,7 @@ class Commande
     #[ORM\Column(length: 255)]
     private ?string $methode = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $stripeSessionId = null;
 
     #[ORM\Column(length: 255)]
@@ -103,12 +103,12 @@ private ?\DateTimeImmutable $created_at = null;
         return $this;
     }
 
-    public function getStripeSessionId(): ?int
+    public function getStripeSessionId(): ?string
     {
         return $this->stripeSessionId;
     }
 
-    public function setStripeSessionId(int $stripeSessionId): static
+    public function setStripeSessionId(string $stripeSessionId): static
     {
         $this->stripeSessionId = $stripeSessionId;
 
