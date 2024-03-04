@@ -123,7 +123,7 @@ class __TwigTemplate_7631a7f07f73089ade597b639a536832 extends Template
                 // line 22
                 echo "\t\t\t\t\t<a href=\"";
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart_add", ["id" => twig_get_attribute($this->env, $this->source, $context["forme3"], "id", [], "any", false, false, false, 22)]), "html", null, true);
-                echo "\" class=\"btn btn-danger\">
+                echo "\" class=\"btn btn-dark\">
                         Prendre ma licence
                     </a> 
                 ";
@@ -205,7 +205,7 @@ class __TwigTemplate_7631a7f07f73089ade597b639a536832 extends Template
           <button type=\"button\" class=\"btn btn-light\" li class=\"nav-item\">
                     {# <a class=\"nav-link\" href=\"{{path('cart_add'}}\">prendre ma licence </a></button> #}
                     {% if forme3.prix > 0 %}
-\t\t\t\t\t<a href=\"{{path('cart_add',{'id':forme3.id})}}\" class=\"btn btn-danger\">
+\t\t\t\t\t<a href=\"{{path('cart_add',{'id':forme3.id})}}\" class=\"btn btn-dark\">
                         Prendre ma licence
                     </a> 
                 {% endif %}
@@ -222,6 +222,6 @@ class __TwigTemplate_7631a7f07f73089ade597b639a536832 extends Template
     </div>
 {% endfor %}
 {% endblock %}
-", "aeroboxe/index.html.twig", "/home/mary/Documents/stage/templates/aeroboxe/index.html.twig");
+", "aeroboxe/index.html.twig", "/home/lulu/Bureau/amiens/stageApi/templates/aeroboxe/index.html.twig");
     }
 }

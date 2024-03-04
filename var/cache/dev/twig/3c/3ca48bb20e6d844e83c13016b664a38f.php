@@ -86,7 +86,7 @@ class __TwigTemplate_088c3b87c0da0ee62a0288f2f77257b0 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "\t<div class=\"container position-relative zindex-2 pt-5 pb-lg-5 pb-md-4 pb-2\">
+        echo "\t<div class=\"commande\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col-lg-6\">
 \t\t\t\t";
@@ -248,7 +248,7 @@ class __TwigTemplate_088c3b87c0da0ee62a0288f2f77257b0 extends Template
 {% endblock %}
 
 {% block body %}
-\t<div class=\"container position-relative zindex-2 pt-5 pb-lg-5 pb-md-4 pb-2\">
+\t<div class=\"commande\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col-lg-6\">
 \t\t\t\t{{ form_start(form, {action:path('order_prepare')}) }}
@@ -321,6 +321,6 @@ class __TwigTemplate_088c3b87c0da0ee62a0288f2f77257b0 extends Template
 \t\t</div>
 \t\t{{ form_end(form) }}</div>
 {% endblock %}
-", "commande/index.html.twig", "/home/mary/Documents/stage/templates/commande/index.html.twig");
+", "commande/index.html.twig", "/home/lulu/Bureau/amiens/stageApi/templates/commande/index.html.twig");
     }
 }
