@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\RecapDetailsRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: RecapDetailsRepository::class)]
+#[ApiResource()]
 class RecapDetails
 {
     #[ORM\Column]

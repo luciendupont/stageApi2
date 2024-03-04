@@ -253,7 +253,7 @@ class AppFixtures extends Fixture
         $commande = new Commande(); 
         $commande->setIsPaid(true)
         ->setMethode('Carte de crédit')
-        ->setStripeSessionId(1)
+        ->setStripeSessionId('1')
         ->setComFactId(1)
         ->setCreatedAt(new \DateTimeImmutable())
         ->setReference('CMD123')

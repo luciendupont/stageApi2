@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\AdresseRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -11,6 +12,7 @@ use App\Entity\Users;
 
 
 #[ORM\Entity(repositoryClass: AdresseRepository::class)]
+#[ApiResource()]
 class Adresse
 {
     #[ORM\Id]

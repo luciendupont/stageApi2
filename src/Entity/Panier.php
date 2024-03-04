@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Entity\Commande;
 use App\Entity\Formedeboxe;
 use Doctrine\DBAL\Types\Types;
@@ -11,6 +12,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
 
 #[ORM\Entity(repositoryClass: PanierRepository::class)]
+#[ApiResource()]
 class Panier
 {
     #[ORM\Id]

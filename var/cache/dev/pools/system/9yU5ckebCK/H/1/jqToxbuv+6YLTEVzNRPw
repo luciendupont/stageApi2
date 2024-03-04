@@ -20,10 +20,10 @@ return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hyd
                 true,
             ],
             'readableLink' => [
-                null,
+                false,
             ],
             'writableLink' => [
-                null,
+                false,
             ],
             'required' => [
                 false,
@@ -73,7 +73,9 @@ return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hyd
                 [
                     'type' => 'array',
                     'items' => [
-                        'type' => 'unknown_type',
+                        'type' => 'string',
+                        'format' => 'iri-reference',
+                        'example' => 'https://example.com/',
                     ],
                 ],
             ],
