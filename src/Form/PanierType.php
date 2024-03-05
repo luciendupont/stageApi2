@@ -14,7 +14,7 @@ class PanierType extends AbstractType
     {
         $builder
             ->add('formedeboxe', TextType::class, [
-                'label' => 'Nom du formedeboxe',
+                'label' => 'Nom de la formedeboxe',
             ])
             ->add('quantite', IntegerType::class, [
                 'label' => 'Quantité',

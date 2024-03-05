@@ -23,7 +23,7 @@ class CommandeController extends AbstractController
         $this->em = $em ;
     
     }
-    #[Route('/order/create', name: 'order_create')]
+    #[Route('/order-create', name: 'order_create')]
     public function index(CartService $cartService): Response
     {
 
@@ -31,9 +31,7 @@ class CommandeController extends AbstractController
             return $this->redirectToRoute('app_login');
         }
     
-    
-
-        // dd($this->getUser());
+      
 
         $form = $this->createForm(CommandeType::class, data: null,options: [
             'user' => $this->getUser()
@@ -44,8 +42,8 @@ class CommandeController extends AbstractController
             'recapCart' => $cartService->getTotal()
         ]);
     }
-    #[Route('/order/verify', name: 'order_prepare', methods: ['POST'])]
-    # ...
+    #[Route('/order-verify', name: 'order_prepare', methods: ['POST'])]
+  
 
 public function prepareOrder(SessionInterface $session, CartService $cartService, Request $request): Response
 {

@@ -12,6 +12,7 @@
 
 body{
    background-color: black;
+ 
    display: inline;
 	border: none ;
 	box-shadow: none;
@@ -24,10 +25,12 @@ body{
 		font-family: 'Segoe UI';
 		font-weight: 400;
 }
+.commande{
+	color: white;
+}
 
 
-
-h1,legend,.horaire,p,h5{
+h1,legend,.horaire,p,h5,h3,span,img,h2,a{
    color: white;
 }
 label{
@@ -92,7 +95,7 @@ position: absolute;
 }
 .footer{
 	background-color: #24262b;
-    padding: 70px 0;
+    padding: 10px 0;
 	color: #ffffff;
 }
 .footer-col{
@@ -104,7 +107,7 @@ position: absolute;
 	color: #ffffff;
 	text-transform: capitalize;
 	margin-bottom: 35px;
-	font-weight: 500;
+	font-weight: 50;
 	position: relative;
 }
 .footer-col h4::before{
