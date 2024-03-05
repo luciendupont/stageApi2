@@ -8,6 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class AdresseType extends AbstractType
 {
@@ -18,28 +19,28 @@ class AdresseType extends AbstractType
         
         
             
-            ->add('adrnom', options:[
+            ->add('adrnom', TextType::class,[
                 'label' => 'Nom'
             ])
-            ->add('adrprenom', options:[
+            ->add('adrprenom', TextType::class,[
                 'label' => 'Prénom'
             ])
-            ->add('adresse', options:[
+            ->add('adresse', TextType::class,[
                 'label' => 'Adresse'
             ])
-            ->add('adrcp', options:[
+            ->add('adrcp', TextType::class,[
                 'label' => 'Code postal'
             ])
-            ->add('adrville', options:[
+            ->add('adrville', TextType::class,[
                 'label' => 'Ville'
             ])
-            ->add('adrpays', options:[
+            ->add('adrpays', TextType::class,[
                 'label' => 'Pays'
             ])
-            ->add('adrtel', options:[
+            ->add('adrtel', TextType::class,[
                 'label' => 'Téléphone'
             ])
-            ->add('adremail', options:[
+            ->add('adremail', TextType::class,[
                 'label' => 'Email'
             ])
             

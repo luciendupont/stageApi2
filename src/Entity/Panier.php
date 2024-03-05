@@ -33,7 +33,7 @@ class Panier
 
     #[ORM\ManyToOne(targetEntity: Formedeboxe::class, inversedBy: "paniers")]
     #[ORM\JoinColumn(name: "forme_de_boxe_id", referencedColumnName: "id")]
-    private ?Formedeboxe $Formedeboxe = null;
+    private ?Formedeboxe $formedeboxe = null;
 
 
     #[ORM\Column(length: 255)]
@@ -95,12 +95,12 @@ class Panier
 
     public function getFormedeboxe(): ?Formedeboxe
     {
-        return $this->Formedeboxe;
+        return $this->formedeboxe;
     }
 
-    public function setFormedeboxe(?Formedeboxe $Formedeboxe): self
+    public function setFormedeboxe(?Formedeboxe $formedeboxe): self
     {
-        $this->Formedeboxe = $Formedeboxe;
+        $this->formedeboxe = $formedeboxe;
 
         return $this;
     }

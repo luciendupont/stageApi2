@@ -9,8 +9,7 @@
    filter: alpha(opacity=10); opacity:0,5;
 }
 
-title{
-background-color: #24262b;}
+
 body{
    background-color: black;
    display: inline;
@@ -26,9 +25,7 @@ body{
 		font-weight: 400;
 }
 
-.commande{
-	background-color: #24262b;
-}
+
 
 h1,legend,.horaire,p,h5{
    color: white;

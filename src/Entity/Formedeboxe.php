@@ -31,10 +31,10 @@ class Formedeboxe
     #[ORM\Column(type: Types::DECIMAL, precision: 7, scale: 2)]
     private ?string $prix = null;
 
-    #[ORM\ManyToMany(targetEntity: Panier::class, mappedBy: "formesDeBoxe")]
+    #[ORM\ManyToMany(targetEntity: Panier::class, mappedBy: "formedeboxe")]
     private $paniers;
 
-    #[ORM\ManyToOne(targetEntity: Panier::class, inversedBy: "formesDeBoxe")]
+    #[ORM\ManyToOne(targetEntity: Panier::class, inversedBy: "formedeboxe")]
     #[ORM\JoinColumn(name: "panier_id", referencedColumnName: "id")]
     private ?Panier $panier = null;
 

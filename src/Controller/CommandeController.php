@@ -6,10 +6,7 @@ use App\Entity\Panier;
 use App\Entity\Commande;
 use App\Form\CommandeType;
 use App\Service\CartService;
-use Stripe\Stripe;
-use Stripe\Checkout\Session as StripeSession;
 use Doctrine\ORM\EntityManagerInterface;
-use phpDocumentor\Reflection\Types\Boolean;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -119,8 +116,4 @@ public function prepareOrder(SessionInterface $session, CartService $cartService
     return $this->redirectToRoute('app_cart');
 }
 
-# ...
-
-    
-    
 }
