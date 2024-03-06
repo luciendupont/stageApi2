@@ -233,7 +233,7 @@ class AppFixtures extends Fixture
 
         $Formedeboxe4 = new Formedeboxe();
         $Formedeboxe4->setNom('aeroboxe')
-        ->setDescription('choregraphie avec la gestuelle boxe')
+        ->setDescription('choregraphie gestuelle boxe')
         ->setPrix(150)
         ->setQuantite(15)
         ->setPhoto('logod.png');

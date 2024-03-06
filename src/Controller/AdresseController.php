@@ -14,15 +14,14 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/adresse')]
 class AdresseController extends AbstractController
 {
-    #[Route('/', name: 'app_adresse_index', methods: ['GET'])]
+    #[Route('/adresse', name: 'app_adresse_index', methods: ['GET'])]
     public function index(AdresseRepository $adresseRepository): Response
     {
         return $this->render('adresse/index.html.twig', [
             'adresses' => $adresseRepository->findAll(),
         ]);
     }
-
-    #[Route('/new', name: 'app_adresse_new', methods: ['GET', 'POST'])]
+    #[Route('/adresse-new', name: 'app_adresse_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $adresse = new Adresse();
@@ -43,7 +42,7 @@ class AdresseController extends AbstractController
     }
 
 
-    #[Route('/new/fact', name: 'app_adresse_new_fact', methods: ['GET', 'POST'])]
+    #[Route('/new-fact', name: 'app_adresse_new_fact', methods: ['GET', 'POST'])]
     public function fact(Request $request, EntityManagerInterface $entityManager): Response
     {
         $adresse = new Adresse();
@@ -64,7 +63,7 @@ class AdresseController extends AbstractController
     }
 
 
-    #[Route('/{id}', name: 'app_adresse_show', methods: ['GET'])]
+    #[Route('/adresse/{id}', name: 'app_adresse_show', methods: ['GET'])]
     public function show(Adresse $adresse): Response
     {
         return $this->render('adresse/show.html.twig', [
@@ -72,7 +71,7 @@ class AdresseController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}/edit', name: 'app_adresse_edit', methods: ['GET', 'POST'])]
+    #[Route('/adresse/{id}/edit', name: 'app_adresse_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Adresse $adresse, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(AdresseType::class, $adresse);
