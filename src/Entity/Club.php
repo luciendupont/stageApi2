@@ -27,6 +27,9 @@ class Club
     #[ORM\Column(length: 255)]
     private ?string $ville = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $pays = null;
+
     #[ORM\Column(length: 20)]
     private ?string $telephone = null;
 
@@ -85,6 +88,18 @@ class Club
     public function setVille(string $ville): static
     {
         $this->ville = $ville;
+
+        return $this;
+    }
+
+    public function getPays(): ?string
+    {
+        return $this->pays;
+    }
+
+    public function setPays(string $pays): static
+    {
+        $this->pays = $pays;
 
         return $this;
     }

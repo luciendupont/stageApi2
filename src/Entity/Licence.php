@@ -42,6 +42,10 @@ class Licence
     #[ORM\Column(length: 255)]
     private ?string $ville = null;
 
+
+    #[ORM\Column(length: 255)]
+    private ?string $pays = null;
+
     #[ORM\Column(length: 5)]
     private ?string $codepostal = null;
 
@@ -165,6 +169,20 @@ class Licence
 
         return $this;
     }
+
+    public function getPays(): ?string
+    {
+        return $this->pays;
+    }
+
+    public function setPays(string $pays): static
+    {
+        $this->pays = $pays;
+
+        return $this;
+    }
+
+
 
     public function getCodepostal(): ?string
     {

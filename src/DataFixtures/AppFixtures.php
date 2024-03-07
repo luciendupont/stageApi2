@@ -29,6 +29,7 @@ class AppFixtures extends Fixture
         ->setDatenaiss(new \DateTime('06/04/1967'))
         ->setcodepostal('80567')
         ->setville('capville')
+        ->setPays('France')
         ->settelephone('0697986575')
         ->setphoto('1.jpg')
         ->setCreatedAt(new \DateTimeImmutable())
@@ -196,6 +197,7 @@ class AppFixtures extends Fixture
         ->setSexe('h')
         ->setAdresse('46 bis rue principale ')
         ->setVille('bazancourt')
+        ->setPays('France')
         ->setCodepostal('60380')
         ->setDatecreat('9/9/2023')
         ->setNomlicence('amateur');
@@ -242,7 +244,8 @@ class AppFixtures extends Fixture
         ->setTelephone('0626259768')
         ->setEmail('jeromefouache@msn.com')
         ->setLogo('logoclub.jpg')
-        ->setVille('Amiens');
+        ->setVille('Amiens')
+        ->setPays('France');
         $manager->persist($club);
 
 
