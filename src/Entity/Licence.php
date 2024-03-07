@@ -51,9 +51,7 @@ class Licence
     #[ORM\Column(length: 255)]
     private ?string $nomlicence = null;
 
-    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?Boxeur $numlicence = null;
+
 
     public function getId(): ?int
     {
@@ -204,15 +202,5 @@ class Licence
         return $this;
     }
 
-    public function getNumlicence(): ?Boxeur
-    {
-        return $this->numlicence;
-    }
 
-    public function setNumlicence(Boxeur $numlicence): static
-    {
-        $this->numlicence = $numlicence;
-
-        return $this;
-    }
 }

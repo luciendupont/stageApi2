@@ -9,16 +9,9 @@
 			<div class="col-lg-6">
 				{{ form_start(form, {action:path('order_prepare')}) }}
 				<h1 class="h2 pb-2">Création de la commande</h1>
-			
-				</h3>
-				<p>
-					<a href="{{path('app_adresse_new')}}">Ajouter une adresse de facturation</a>
-				</p>
 				
-				
-			</div>
 			<div class="col-lg-5 offset-lg-1 pt-1">
-				<h2 class="d-flex align-items-center justify-content-between border-top fs-xl pt-4 mb-4">Récapitulatif de la commande
+				<h2 class="pb-2 pt-md-2 my-4 mt-lg-5">Récapitulatif de la commande
 					
 				</h2>
 				{% set total = null %}
@@ -26,7 +19,7 @@
 {% set total = total + formedeboxe.formedeboxe.prix %}
 				
 
-					<div class="d-flex align-items-center justify-content-between border-top fs-xl pt-4 mb-4"">
+					<div class="d-sm-flex align-items-center border-top-4">
 						<a class="d-inline-block flex-shrink-0  rounded-1 p-sm-2 p-xl-3 mb-2 mb-sm-0"></a>
 							<img src="/image/{{ formedeboxe.formedeboxe.photo }}" width="150" height="150" alt="{{ formedeboxe.formedeboxe.photo}}">
 							<div class="w-100 pt-1 ps-sm-4">
@@ -46,9 +39,7 @@
 								</div>
 								<br>
 								<div class="nav justify-content-end mt-n4">
-									<a class="nav-link fs-xl p-2" href="{{ path('cart_remove', {id: formedeboxe.formedeboxe.id}) }}" data-bs-toggle="tooltip" title="Remove">
-										<i class="ai-trash"</i>
-									</a>
+									
 								</div>
 							</div>
 					</div>
@@ -67,5 +58,5 @@
 
 			</div>
 		</div>
-	
+		{{ form_end(form) }}</div>
 {% endblock %}

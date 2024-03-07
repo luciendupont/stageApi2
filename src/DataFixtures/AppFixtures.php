@@ -185,10 +185,6 @@ class AppFixtures extends Fixture
 
         
 
-        $boxeur = new Boxeur();
-        $boxeur ->setFormedeboxe('amateur')
-        ->setPalmares('5C/4V/1D');
-        $manager->persist($boxeur);
 
         $licence = new Licence();
         $licence->setNom('clery')
@@ -202,8 +198,8 @@ class AppFixtures extends Fixture
         ->setVille('bazancourt')
         ->setCodepostal('60380')
         ->setDatecreat('9/9/2023')
-        ->setNomlicence('amatrur')
-        ->setNumlicence($boxeur);
+        ->setNomlicence('amateur');
+
         $manager->persist($licence);
             
         $Formedeboxe1 = new Formedeboxe();
